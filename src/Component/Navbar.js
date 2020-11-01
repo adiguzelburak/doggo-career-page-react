@@ -41,8 +41,8 @@ function Navbar() {
           <img
             src={navbarIcon}
             className="navbarIcon left-side"
-            width="150"
-            height="100"
+            width="auto"
+            height="auto"
           ></img>
         </a>
         <div

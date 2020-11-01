@@ -64,9 +64,7 @@
 .navbar-item {
   background-color: #ffedd8;
 }
-.left-side {
-  margin-left: 200px;
-}
+
 /* .column {
   display: flex;
   justify-content: center;
@@ -86,13 +84,19 @@
 .joinImg {
   float: right;
   padding: 0 10px 10px 0;
-  height: 300px;
-  width: auto;
-  margin-left: 60px;
 }
 .titleJoinUs {
   font-size: 48px;
   color: #f17560;
+  width: 400px;
+}
+.career-page {
+  width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 }
 .employee {
   display: flex;
@@ -181,7 +185,51 @@
 .content {
   font-size: 16px;
 }
-@media only screen and (max-width: 1024px) {
+.career {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 200px;
+}
+.apply {
+  margin-top: 50px;
+  height: 50px;
+  width: 215px;
+  background-color: #f7a64b;
+  border-radius: 290486px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  font-size: 14px;
+  color: white;
+  box-shadow: -3.6px 9.3px 18px 0 rgba(247, 166, 76, 0.5);
+  cursor: pointer;
+}
+.title-join-us-intern {
+  font-size: 24px;
+  color: #f8745d;
+}
+@media only screen and (max-width: 1154px) {
+  .title-join-us-intern {
+    font-size: 18px;
+    color: #f8745d;
+  }
+  .career-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
+  }
+  .career-left-side {
+    margin-right: 1px;
+  }
+  .titleJoinUs {
+    font-size: 32px;
+    margin-left: 90px;
+  }
   .joinUs {
     background-color: #ffedd8;
     display: flex;
@@ -194,6 +242,10 @@
   }
   .title-content {
     width: 90% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .joinImg {
     height: 150px;

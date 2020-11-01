@@ -1,62 +1,55 @@
 import React from "react";
-import joinUs from "../images/doggo-joinUs.png";
+import stajyer from "../images/stajyer.png";
 import doggo from "../images/doggo.png";
 import apple from "../images/apple.png";
 import google from "../images/google.png";
-import { Link } from "react-router-dom";
-function Body() {
+function Pages() {
+  
   return (
     <div>
+      {/* <div className="career-page">
+        <img className="joinImg" src={stajyer} height="200" width="200"></img>
+        <div className="career-left-side">
+          <div className="titleJoinUs">Front-end Developer</div>
+          <div className="title-join-us">Stajyer</div>
+          <div className="apply">ÖZGEÇMİŞİN İLE BAŞVUR</div>
+        </div>
+
+      </div> */}
       <div className="joinUs">
-        <img src={joinUs} className="joinImg" height="300" width="auto"></img>
+        <img src={stajyer} className="joinImg" height="200" width="200"></img>
         <div className="title-content">
-          <div className="titleJoinUs">Ekibimize Katıl!</div>
-          <div className="content">
-            DogGO, mobil uygulama üzerinden pet sahiplerine köpek gezdirme
-            hizmeti sunan bir girişimdir. Girişimimizin en büyük amacı, pet
-            sahiplerine aradıkları güvenli hizmeti sunmak ve ulaşılabilir hale
-            getirmek, can dostlarımızın ve sahiplerinin hayatını daha iyi
-            kılmak, Türkiye’de sahiplenmeyi arttırmak ve köpek bakım kültürünü
-            oturtmaktır. Şu an Türkiye’de köpek gezdirme hizmetine odaklanan
-            uygulamamız, kısa süre içinde evde bakım hizmetlerini de kapsayarak
-            Avrupa pazarına açılmayı hedeflemektedir.
+          <div className="titleJoinUs">Front-end Developer</div>
+          <div className="title-join-us-intern">Stajyer
           </div>
+          <div className="apply">ÖZGEÇMİŞİN İLE BAŞVUR</div>
         </div>
       </div>
-      <div className="employee">
-        <Link>
-          <div className="employee-items">
-            <div className="employee-title">Front-end Developer</div>
-            <div className="employee-text">Stajyer</div>
-          </div>
-        </Link>
-        <Link>
-          <div className="employee-items">
-            <div className="employee-title">Back-end Developer</div>
-            <div className="employee-text">Stajyer</div>
-          </div>
-        </Link>
-        <Link>
-          {" "}
-          <div className="employee-items">
-            <div className="employee-title">Data Analist</div>
-            <div className="employee-text">Stajyer</div>
-          </div>
-        </Link>
+      <div className="career career-be-like-developer">
+        <h3>Front-end Developer Stajyer'i Olarak</h3>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
       </div>
-      <div className="employee">
-        <Link>
-          <div className="employee-items">
-            <div className="employee-title">Front-end / Mobile Developer</div>
-            <div className="employee-text">Stajyer</div>
-          </div>
-        </Link>
-        <Link>
-          <div className="employee-items">
-            <div className="employee-title">Marketing</div>
-            <div className="employee-text">Stajyer</div>
-          </div>
-        </Link>
+      <div className="career career-features">
+        <h3>Aradığımız Özellikler</h3>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+      </div>
+      <div className="career career-responsibilities">
+        <h3>Sorumlulukların</h3>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+      </div>
+      <div className="career career-work-for-doggo">
+        <h3>DogGO'da Çalışmak</h3>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
       </div>
       <div className="aboutUs">
         <div className="about-applications">
@@ -112,4 +105,4 @@ function Body() {
   );
 }
 
-export default Body;
+export default Pages;
