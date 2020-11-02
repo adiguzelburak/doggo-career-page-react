@@ -24,19 +24,19 @@ function Body() {
         </div>
       </div>
       <div className="employee">
-        <Link>
+        <Link to='/careerDescription'>
           <div className="employee-items">
             <div className="employee-title">Front-end Developer</div>
             <div className="employee-text">Stajyer</div>
           </div>
         </Link>
-        <Link>
+        <Link to='/careerDescription'>
           <div className="employee-items">
             <div className="employee-title">Back-end Developer</div>
             <div className="employee-text">Stajyer</div>
           </div>
         </Link>
-        <Link>
+        <Link to='/careerDescription'>
           {" "}
           <div className="employee-items">
             <div className="employee-title">Data Analist</div>
@@ -45,13 +45,13 @@ function Body() {
         </Link>
       </div>
       <div className="employee">
-        <Link>
+        <Link to='/careerDescription'>
           <div className="employee-items">
             <div className="employee-title">Front-end / Mobile Developer</div>
             <div className="employee-text">Stajyer</div>
           </div>
         </Link>
-        <Link>
+        <Link to='/careerDescription'>
           <div className="employee-items">
             <div className="employee-title">Marketing</div>
             <div className="employee-text">Stajyer</div>

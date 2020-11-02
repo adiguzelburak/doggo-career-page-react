@@ -9,8 +9,12 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
-        {/* <Body /> */}
-        <Pages />
+        <Switch>
+          <Route path="/" exact component={Body}/>
+          <Route path="/careerDescription" component={Pages}/>
+          {/* <Body /> */}
+          {/* <Pages /> */}
+        </Switch>
       </div>
     </Router>
   );
