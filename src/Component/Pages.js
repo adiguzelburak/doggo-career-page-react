@@ -8,9 +8,9 @@ import Navbar from "./Navbar";
 function Pages() {
   const fetchItems = async () => {
     const data = await fetch("jobs.js")
-    .then(response=>response.text())
-    .then(data=>console.log(data))
-    .catch(err=>console.log(err));
+      .then((response) => response.text())
+      .then((data) => console.log(data))
+      .catch((err) => console.log(err));
   };
   fetchItems();
   return (
@@ -63,23 +63,57 @@ function Pages() {
       </div>
       <div className="career career-features">
         <h3 className="titles">Aradığımız Özellikler</h3>
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>4</span>
+        <br></br>
+        <span><img src={check} height="16" width="16"></img> Front-end teknolojilerinde kendini geliştirmek isteyen,</span>
+        <br></br>
+        <span><img src={check} height="16" width="16"></img> Tercihen ReactJS, React Native dillerinde tecrübesi olan ve bu
+          alanlarda kendini geliştirmek isteyen,
+        </span>
+        <br></br>
+        <span><img src={check} height="16" width="16"></img> Node.js tecrübesi olması avantaj,</span> <br></br>
+        <span><img src={check} height="16" width="16"></img> HTML ve CSS ile çalışmış olmak avantaj,</span> <br></br>
+        <span><img src={check} height="16" width="16"></img> Trello ve kanban sisteminde çalışmış olması avantaj,</span> <br></br>
+        <span><img src={check} height="16" width="16"></img> Git teknolojisine hakim,</span> <br></br>
+        <span><img src={check} height="16" width="16"></img> İleri seviyede İngilizce bilen,</span> <br></br>
+        <span><img src={check} height="16" width="16"></img> Yazılım geliştirme süreçlerine uyacak ve ekiple uyumlu şekilde
+          çalışacak,
+        </span> <br></br>
+        <span><img src={check} height="16" width="16"></img> Sorumluluk sahibi,</span> <br></br>
+        <span><img src={check} height="16" width="16"></img> Yaptığı işi sahiplenen,</span> <br></br>
+        <span><img src={check} height="16" width="16"></img> İyi iletişim kurabilen,</span> <br></br>
+        <span><img src={check} height="16" width="16"></img> Üniversitelerin mühendislik bölümlerinin tercihen 3. veya 4. sınıfında
+          öğrenci, zorunlu veya uzun dönem staj yapmak isteyen arkadaşlarımızı
+          bekliyoruz!
+        </span>
       </div>
       <div className="career career-responsibilities">
-        <h3 className="titles">Sorumlulukların</h3>
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
+        <h3 className="titles">Sorumlulukların</h3> <br></br>
+        <span><img src={check} height="16" width="16"></img> Front-end/ Mobil uygulama geliştirmelerinin teknolojik ilerlemeler ve
+          standartlar göz önünde bulundurarak yapılması,
+        </span> <br></br>
+        <span><img src={check} height="16" width="16"></img> Websitesi ve mobil uygulama üzerine atanan görevleri yerine getirerek
+          katkı sağlanması,
+        </span> <br></br>
+        <span><img src={check} height="16" width="16"></img> Yazılım ekibi ile uyum ve iş birliği içerisinde, zaman hedeflerine
+          uyarak projelerin tamamlanması.
+        </span>
       </div>
       <div className="career career-work-for-doggo">
-        <h3 className="titles">DogGO'da Çalışmak</h3>
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
+        <h3 className="titles">DogGO'da Çalışmak</h3> <br></br>
+        <span><img src={check} height="16" width="16"></img> Genç ve dinamik bir ekibin parçası olarak sorumluluk almak,</span><br></br>
+        <span><img src={check} height="16" width="16"></img> Yeni kurulan teknolojik bir girişimin önemli bir parçası olmak,
+        </span> <br></br>
+        <span><img src={check} height="16" width="16"></img> Kendini Front-end ve isteğe bağlı olarak yazılımın diğer alanlarında
+          geliştirmek,
+        </span> <br></br>
+        <span><img src={check} height="16" width="16"></img> Çözüm odaklı, hızlı bir tempoda ve agile kanban medolojisi ile
+          çalışmak,
+        </span> <br></br>
+        <span><img src={check} height="16" width="16"></img> İnsiyatif almak,</span> <br></br>
+        <span><img src={check} height="16" width="16"></img> Yeni teknolojiler öğrenmek istiyorsan</span> <br></br>
+        <div className="apply">ÖZGEÇMİŞİN İLE BAŞVUR</div>
       </div>
+      
       <div className="aboutUs">
         <div className="about-applications">
           <img src={doggo} height="45" width="180"></img>
