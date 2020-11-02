@@ -8,7 +8,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
+        
         <Switch>
           <Route path="/" exact component={Body}/>
           <Route path="/careerDescription" component={Pages}/>

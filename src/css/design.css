@@ -188,9 +188,13 @@
 .career {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   margin-top: 200px;
+  height: 500px;
+  width: 900px;
+  margin-left: 500px;
+  margin-right: 1000px;
 }
 .apply {
   margin-top: 50px;
@@ -210,6 +214,10 @@
 .title-join-us-intern {
   font-size: 24px;
   color: #f8745d;
+}
+.titles {
+  color: #f8745d;
+  font-size: 32px;
 }
 @media only screen and (max-width: 1154px) {
   .title-join-us-intern {
@@ -274,7 +282,14 @@
   .about-info {
     margin-top: 30px;
   }
+  .career {
+    width: 90%;
+    
+  margin-left: 0px;
+  margin-right: 0px;
+  }
 }
+
 .copyright {
   background-color: #fff9f3;
   height: 60px;
@@ -291,49 +306,5 @@ body {
 @media only screen and (max-width: 400px) {
   .title-content {
     width: 100%;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .joinUs {
-    background-color: #ffedd8;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .navbar {
-    width: 100%;
-  }
-  .content {
-    width: 90%;
-  }
-  .joinImg {
-    height: 150px;
-    width: auto;
-  }
-  .employee {
-    flex-direction: column;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .employee-items {
-    height: 150px;
-    width: 90%;
-    flex-direction: column;
-    margin-top: 30px;
-    font-size: 20px;
-  }
-  .about-us-text {
-    display: none;
-  }
-  .aboutUs {
-    display: flex;
-    flex-direction: column;
-  }
-  .about-info {
-    margin-top: 30px;
   }
 }

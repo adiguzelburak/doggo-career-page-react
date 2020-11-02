@@ -4,9 +4,11 @@ import doggo from "../images/doggo.png";
 import apple from "../images/apple.png";
 import google from "../images/google.png";
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 function Body() {
   return (
     <div>
+      <Navbar />
       <div className="joinUs">
         <img src={joinUs} className="joinImg" height="300" width="auto"></img>
         <div className="title-content">

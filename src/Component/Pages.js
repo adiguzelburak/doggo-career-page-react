@@ -3,10 +3,19 @@ import stajyer from "../images/stajyer.png";
 import doggo from "../images/doggo.png";
 import apple from "../images/apple.png";
 import google from "../images/google.png";
+import check from "../images/check.png";
+import Navbar from "./Navbar";
 function Pages() {
-  
+  const fetchItems = async () => {
+    const data = await fetch("jobs.js")
+    .then(response=>response.text())
+    .then(data=>console.log(data))
+    .catch(err=>console.log(err));
+  };
+  fetchItems();
   return (
     <div>
+      <Navbar />
       {/* <div className="career-page">
         <img className="joinImg" src={stajyer} height="200" width="200"></img>
         <div className="career-left-side">
@@ -20,33 +29,53 @@ function Pages() {
         <img src={stajyer} className="joinImg" height="200" width="200"></img>
         <div className="title-content">
           <div className="titleJoinUs">Front-end Developer</div>
-          <div className="title-join-us-intern">Stajyer
-          </div>
+          <div className="title-join-us-intern">Stajyer</div>
           <div className="apply">ÖZGEÇMİŞİN İLE BAŞVUR</div>
         </div>
       </div>
       <div className="career career-be-like-developer">
-        <h3>Front-end Developer Stajyer'i Olarak</h3>
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>4</span>
+        <h3 className="titles">Front-end Developer Stajyer'i Olarak</h3>
+        <br></br>
+        <span>
+          <img src={check} height="16" width="16"></img> Yazılım geliştirme
+          konusunda kendini geliştirmeye istekli,
+        </span>
+        <br></br>
+        <span>
+          <img src={check} height="16" width="16"></img> Öğrenmeye açık,
+          Dünya’nın önde gelen uygulamalarının kullandığı teknolojilerde
+          kendisini geliştirmek isteyen,
+        </span>
+        <br></br>
+        <span>
+          <img src={check} height="16" width="16"></img> Planlama becerileri
+          yüksek ve Moda’daki ofisimizde haftanın en az üç günü bizimle
+          çalışabilecek takım arkadaşları arıyoruz. (Duruma göre uzaktan çalışma
+          olanağı tanımaktayız.)
+        </span>
+        <br></br>
+        <span>
+          <img src={check} height="16" width="16"></img> Mobil uygulama
+          üzerinden hizmet veren bir şirketin geliştirilmesinde etkin rol
+          alarak, köpek sahiplerinin ve DogGO Walker’ların deneyimleri üzerinde
+          doğrudan etkili olacaksın.
+        </span>
       </div>
       <div className="career career-features">
-        <h3>Aradığımız Özellikler</h3>
+        <h3 className="titles">Aradığımız Özellikler</h3>
         <span>1</span>
         <span>2</span>
         <span>3</span>
         <span>4</span>
       </div>
       <div className="career career-responsibilities">
-        <h3>Sorumlulukların</h3>
+        <h3 className="titles">Sorumlulukların</h3>
         <span>1</span>
         <span>2</span>
         <span>3</span>
       </div>
       <div className="career career-work-for-doggo">
-        <h3>DogGO'da Çalışmak</h3>
+        <h3 className="titles">DogGO'da Çalışmak</h3>
         <span>1</span>
         <span>2</span>
         <span>3</span>
