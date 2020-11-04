@@ -8,6 +8,8 @@
 .navbar-brand {
   height: 85px;
   background-color: #ffedd8;
+  display: flex;
+  align-items: center;
 }
 .navbar-menu {
   background-color: #ffedd8 !important;
@@ -22,6 +24,19 @@
   cursor: pointer;
 }
 #setMeet:hover {
+  box-shadow: -4px 4px 4px 1px #f8745d;
+}
+#set-meet-navbar{
+  border-radius: 290486px;
+  background-color: #f8745d;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+#set-meet-navbar:hover{
   box-shadow: -4px 4px 4px 1px #f8745d;
 }
 #beWalker {
@@ -364,4 +379,9 @@ body {
     padding-right: 0px;
     font-size: 16px;
 }
+}
+@media only screen and (max-width: 1024px){
+  #set-meet-navbar{
+    display: inline;
+  }
 }

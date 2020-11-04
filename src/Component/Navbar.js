@@ -53,7 +53,7 @@ function Navbar() {
         </Link>
         <div
           role="button"
-          class="navbar-burger has-dropdown"
+          className="navbar-burger has-dropdown"
           data-target="navMenu"
           aria-label="menu"
           aria-expanded="false"
@@ -62,9 +62,9 @@ function Navbar() {
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </div>
-        {/* <div id="setMeet" class="navbar-item">
+        <div id="set-meet-navbar" className="navbar-item set-meet-navbar">
           Tanışma Yürüyüşü Planla!
-        </div> */}
+        </div> 
 
         <div class="navbar-menu" id="navMenu"></div>
       </div>
