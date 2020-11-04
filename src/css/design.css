@@ -1,5 +1,9 @@
 .navbar {
   background-color: #ffedd8;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 30;
 }
 .navbar-brand {
   height: 85px;
@@ -78,8 +82,19 @@
   background-color: #f17560;
 } */
 .joinUs {
-  width: 900px;
+  width: auto;
   margin: auto;
+  margin-top: 83px;
+  padding-left: 400px;
+  padding-right: 400px;
+}
+.joinUss {
+  width: auto;
+  margin: auto;
+  margin-top: 83px;
+  padding-left: 400px;
+  padding-right: 400px;
+  padding-bottom: 300px;
 }
 .joinImg {
   float: right;
@@ -191,10 +206,10 @@
   align-items: flex-start;
   flex-direction: column;
   margin-top: 90px;
-  height: 500px;
-  width: 900px;
-  margin-left: 500px;
-  margin-right: 1000px;
+  padding-left: 400px;
+  padding-right: 400px;
+
+  font-size: 16px;
 }
 .apply {
   margin-top: 50px;
@@ -264,13 +279,29 @@
   }
   .employee-items {
     height: 150px;
-    width: 650px;
+    width: 600px;
     flex-direction: column;
     margin-top: 30px;
   }
   .joinUs {
     margin: auto;
     width: auto;
+
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 83px;
+  }
+  .joinUss {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    margin-top: 83px;
   }
   .about-us-text {
     display: none;
@@ -281,12 +312,16 @@
   }
   .about-info {
     margin-top: 30px;
-  }
-  .career {
-    width: 90%;
-    
-  margin-left: 0px;
-  margin-right: 0px;
+  }.career {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 90px;
+    padding-left: 10px;
+    padding-right: 13px;
+  
+    font-size: 16px;
   }
 }
 
@@ -303,8 +338,30 @@ body {
   background-image: url("../images/background.png");
   background-repeat: repeat-x;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   .title-content {
     width: 100%;
   }
+  .employee-items{
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .joinUs {
+    width: auto;
+    margin: auto;
+    margin-top: 83px;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+  .career {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 90px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 16px;
+}
 }

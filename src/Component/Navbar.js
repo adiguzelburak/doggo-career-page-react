@@ -1,6 +1,7 @@
 import React from "react";
 import navbarIcon from "../images/doggo.png";
 import $ from "jquery";
+import { Link } from "react-router-dom";
 function Navbar() {
   document.addEventListener("DOMContentLoaded", () => {
     // Get all "navbar-burger" elements
@@ -31,20 +32,25 @@ function Navbar() {
       // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
       $(".navbar-burger").toggleClass("is-active");
       $(".navbar-menu").toggleClass("is-active");
-      $(".asdf").toggleClass("is-active");
     });
   });
   return (
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav
+      class="navbar is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
       <div class="navbar-brand">
-        <a class="navbar-start navbar-item" href="#">
-          <img
-            src={navbarIcon}
-            className="navbarIcon left-side"
-            width="auto"
-            height="auto"
-          ></img>
-        </a>
+        <Link to="/">
+          <a class="navbar-start navbar-item">
+            <img
+              src={navbarIcon}
+              className="navbarIcon left-side"
+              width="auto"
+              height="auto"
+            ></img>
+          </a>
+        </Link>
         <div
           role="button"
           class="navbar-burger has-dropdown"
@@ -65,7 +71,9 @@ function Navbar() {
 
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item">Kariyer</a>
+          <Link to="/">
+            <a class="navbar-item">Kariyer</a>
+          </Link>
 
           <a class="navbar-item">SSS</a>
 

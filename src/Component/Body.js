@@ -9,7 +9,7 @@ function Body() {
   return (
     <div>
       <Navbar />
-      <div className="joinUs">
+      <div className="joinUss">
         <img src={joinUs} className="joinImg" height="300" width="auto"></img>
         <div className="title-content">
           <div className="titleJoinUs">Ekibimize Katıl!</div>

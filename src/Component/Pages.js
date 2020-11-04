@@ -6,13 +6,7 @@ import google from "../images/google.png";
 import check from "../images/check.png";
 import Navbar from "./Navbar";
 function Pages() {
-  const fetchItems = async () => {
-    const data = await fetch("jobs.js")
-      .then((response) => response.text())
-      .then((data) => console.log(data))
-      .catch((err) => console.log(err));
-  };
-  fetchItems();
+  
   return (
     <div>
       <Navbar />
