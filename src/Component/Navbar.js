@@ -41,16 +41,14 @@ function Navbar() {
       aria-label="main navigation"
     >
       <div class="navbar-brand">
-        <Link to="/">
-          <a class="navbar-start navbar-item">
-            <img
-              src={navbarIcon}
-              className="navbarIcon left-side"
-              width="auto"
-              height="auto"
-            ></img>
-          </a>
-        </Link>
+        <a href="http://localhost:3000/" class="navbar-start navbar-item">
+          <img
+            src={navbarIcon}
+            className="navbarIcon left-side"
+            width="auto"
+            height="auto"
+          ></img>
+        </a>
         <div
           role="button"
           className="navbar-burger has-dropdown"
@@ -64,20 +62,24 @@ function Navbar() {
         </div>
         <div id="set-meet-navbar" className="navbar-item set-meet-navbar">
           Tanışma Yürüyüşü Planla!
-        </div> 
+        </div>
 
         <div class="navbar-menu" id="navMenu"></div>
       </div>
 
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <Link to="/">
-            <a class="navbar-item">Kariyer</a>
-          </Link>
+          <a href="http://localhost:3000/" class="navbar-item">
+            <strong>Kariyer</strong>
+          </a>
 
-          <a class="navbar-item">SSS</a>
+          <a class="navbar-item">
+            <strong>SSS</strong>
+          </a>
 
-          <a class="navbar-item">İletişim</a>
+          <a class="navbar-item">
+            <strong>İletişim</strong>
+          </a>
         </div>
 
         {/* Navbar Menu */}

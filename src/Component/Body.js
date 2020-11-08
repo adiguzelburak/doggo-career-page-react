@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import joinUs from "../images/doggo-joinUs.png";
 import doggo from "../images/doggo.png";
 import apple from "../images/apple.png";
 import google from "../images/google.png";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
-function Body() {
+import { matchPath } from "react-router";
+
+import jobs from "../jobs";
+const Body = (props) => {
   return (
     <div>
       <Navbar />
@@ -26,19 +29,19 @@ function Body() {
         </div>
       </div>
       <div className="employee">
-        <Link to='/careerDescription'>
+        <Link to="/careerDescription/0">
           <div className="employee-items">
             <div className="employee-title">Front-end Developer</div>
             <div className="employee-text">Stajyer</div>
           </div>
         </Link>
-        <Link to='/careerDescription'>
+        <Link to="/careerDescription/1">
           <div className="employee-items">
             <div className="employee-title">Back-end Developer</div>
             <div className="employee-text">Stajyer</div>
           </div>
         </Link>
-        <Link to='/careerDescription'>
+        <Link to="/careerDescription/2">
           {" "}
           <div className="employee-items">
             <div className="employee-title">Data Analist</div>
@@ -47,13 +50,13 @@ function Body() {
         </Link>
       </div>
       <div className="employee">
-        <Link to='/careerDescription'>
+        <Link to="/careerDescription/3">
           <div className="employee-items">
             <div className="employee-title">Front-end / Mobile Developer</div>
             <div className="employee-text">Stajyer</div>
           </div>
         </Link>
-        <Link to='/careerDescription'>
+        <Link to="/careerDescription/4">
           <div className="employee-items">
             <div className="employee-title">Marketing</div>
             <div className="employee-text">Stajyer</div>
@@ -112,6 +115,6 @@ function Body() {
       <div className="copyright">© DogGO 2019 v2.18</div>
     </div>
   );
-}
+};
 
 export default Body;

@@ -5,8 +5,11 @@ import apple from "../images/apple.png";
 import google from "../images/google.png";
 import check from "../images/check.png";
 import Navbar from "./Navbar";
-function Pages() {
+import jobs from "../jobs";
+const Pages = ({ match }) => {
+  const contextItems = jobs.map((data, index) => data);
   
+
   return (
     <div>
       <Navbar />
@@ -21,21 +24,26 @@ function Pages() {
       </div> */}
       <div className="joinUs">
         <img src={stajyer} className="joinImg" height="200" width="200"></img>
+        <div> </div>
         <div className="title-content">
-          <div className="titleJoinUs">Front-end Developer</div>
-          <div className="title-join-us-intern">Stajyer</div>
+          <div className="titleJoinUs">
+            {contextItems[match.params.id].title}
+          </div>
+          <div className="title-join-us-intern">
+            {contextItems[match.params.id].subtitle}
+          </div>
           <div className="apply">ÖZGEÇMİŞİN İLE BAŞVUR</div>
         </div>
       </div>
       <div className="career career-be-like-developer">
-        <h3 className="titles">Front-end Developer Stajyer'i Olarak</h3>
+        <h3 className="titles">{contextItems[match.params.id].beWorker}</h3>
         <br></br>
         <span>
-          <img src={check} height="16" width="16"></img> Yazılım geliştirme
-          konusunda kendini geliştirmeye istekli,
+          <img src={check} height="16" width="16"></img>{" "}
+          {contextItems[0].description}
         </span>
         <br></br>
-        <span>
+        {/* <span>
           <img src={check} height="16" width="16"></img> Öğrenmeye açık,
           Dünya’nın önde gelen uygulamalarının kullandığı teknolojilerde
           kendisini geliştirmek isteyen,
@@ -53,14 +61,17 @@ function Pages() {
           üzerinden hizmet veren bir şirketin geliştirilmesinde etkin rol
           alarak, köpek sahiplerinin ve DogGO Walker’ların deneyimleri üzerinde
           doğrudan etkili olacaksın.
-        </span>
+        </span> */}
       </div>
       <div className="career career-features">
         <h3 className="titles">Aradığımız Özellikler</h3>
         <br></br>
-        <span><img src={check} height="16" width="16"></img> Front-end teknolojilerinde kendini geliştirmek isteyen,</span>
+        <span>
+          <img src={check} height="16" width="16"></img>
+          {contextItems[match.params.id].abilities}
+        </span>
         <br></br>
-        <span><img src={check} height="16" width="16"></img> Tercihen ReactJS, React Native dillerinde tecrübesi olan ve bu
+        {/* <span><img src={check} height="16" width="16"></img> Tercihen ReactJS, React Native dillerinde tecrübesi olan ve bu
           alanlarda kendini geliştirmek isteyen,
         </span>
         <br></br>
@@ -78,24 +89,30 @@ function Pages() {
         <span><img src={check} height="16" width="16"></img> Üniversitelerin mühendislik bölümlerinin tercihen 3. veya 4. sınıfında
           öğrenci, zorunlu veya uzun dönem staj yapmak isteyen arkadaşlarımızı
           bekliyoruz!
-        </span>
+        </span> */}
       </div>
       <div className="career career-responsibilities">
         <h3 className="titles">Sorumlulukların</h3> <br></br>
-        <span><img src={check} height="16" width="16"></img> Front-end/ Mobil uygulama geliştirmelerinin teknolojik ilerlemeler ve
-          standartlar göz önünde bulundurarak yapılması,
-        </span> <br></br>
-        <span><img src={check} height="16" width="16"></img> Websitesi ve mobil uygulama üzerine atanan görevleri yerine getirerek
+        <span>
+          <img src={check} height="16" width="16"></img>{" "}
+          {contextItems[match.params.id].responsibilities}
+        </span>{" "}
+        <br></br>
+        {/* <span><img src={check} height="16" width="16"></img> Websitesi ve mobil uygulama üzerine atanan görevleri yerine getirerek
           katkı sağlanması,
         </span> <br></br>
         <span><img src={check} height="16" width="16"></img> Yazılım ekibi ile uyum ve iş birliği içerisinde, zaman hedeflerine
           uyarak projelerin tamamlanması.
-        </span>
+        </span> */}
       </div>
       <div className="career career-work-for-doggo">
         <h3 className="titles">DogGO'da Çalışmak</h3> <br></br>
-        <span><img src={check} height="16" width="16"></img> Genç ve dinamik bir ekibin parçası olarak sorumluluk almak,</span><br></br>
-        <span><img src={check} height="16" width="16"></img> Yeni kurulan teknolojik bir girişimin önemli bir parçası olmak,
+        <span>
+          <img src={check} height="16" width="16"></img>
+          {contextItems[match.params.id].workingAtDoggo}
+        </span>
+        <br></br>
+        {/* <span><img src={check} height="16" width="16"></img> Yeni kurulan teknolojik bir girişimin önemli bir parçası olmak,
         </span> <br></br>
         <span><img src={check} height="16" width="16"></img> Kendini Front-end ve isteğe bağlı olarak yazılımın diğer alanlarında
           geliştirmek,
@@ -104,10 +121,12 @@ function Pages() {
           çalışmak,
         </span> <br></br>
         <span><img src={check} height="16" width="16"></img> İnsiyatif almak,</span> <br></br>
-        <span><img src={check} height="16" width="16"></img> Yeni teknolojiler öğrenmek istiyorsan</span> <br></br>
-        <div className="apply">ÖZGEÇMİŞİN İLE BAŞVUR</div>
+        <span><img src={check} height="16" width="16"></img> Yeni teknolojiler öğrenmek istiyorsan</span> <br></br> */}
+        <a href={contextItems[match.params.id].link} className="apply">
+          ÖZGEÇMİŞİN İLE BAŞVUR
+        </a>
       </div>
-      
+
       <div className="aboutUs">
         <div className="about-applications">
           <img src={doggo} height="45" width="180"></img>
@@ -160,6 +179,6 @@ function Pages() {
       <div className="copyright">© DogGO 2019 v2.18</div>
     </div>
   );
-}
+};
 
 export default Pages;

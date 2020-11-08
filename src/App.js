@@ -4,20 +4,20 @@ import Navbar from "./Component/Navbar";
 import Body from "./Component/Body";
 import Pages from "./Component/Pages";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-function App() {
+const App = ({ match }) => {
   return (
     <Router>
       <div className="App">
-        
         <Switch>
-          <Route path="/" exact component={Body}/>
-          <Route path="/careerDescription" component={Pages}/>
+          <Route path="/" exact component={Body} />
+          <Route path="/careerDescription/:id" component={Pages} />
+
           {/* <Body /> */}
           {/* <Pages /> */}
         </Switch>
       </div>
     </Router>
   );
-}
+};
 
 export default App;

@@ -2,6 +2,7 @@ export default [
     {
         title: "Front-end Developer",
         subtitle: "Stajyer",
+        beWorker: "Front-end Developer Çalışanı Olarak",
         description: [
             "Yazılım geliştirme konusunda kendini geliştirmeye istekli,",
             "Öğrenmeye açık, Dünya’nın önde gelen uygulamalarının kullandığı teknolojilerde kendisini geliştirmek isteyen,",
@@ -40,6 +41,7 @@ export default [
     {
         title: "Back-end Developer",
         subtitle: "Stajyer",
+        beWorker: "Back-end Developer Çalışanı Olarak",
         description: [
             "Yazılım geliştirme konusunda kendini geliştirmeye istekli,",
             "Öğrenmeye açık, Dünya’nın önde gelen uygulamalarının kullandığı teknolojilerde kendisini geliştirmek isteyen,",
@@ -80,6 +82,7 @@ export default [
     {
         title: "Data Analist",
         subtitle: "Stajyer",
+        beWorker: "Data Analist Çalışanı Olarak",
         description: [
             "Yazılım geliştirme konusunda kendini geliştirmeye istekli,",
             "Öğrenmeye açık, Dünya’nın önde gelen uygulamalarının kullandığı teknolojilerde kendisini geliştirmek isteyen,",
@@ -118,6 +121,7 @@ export default [
     {
         title: "Front-end / Mobile Developer",
         subtitle: "Senior",
+        beWorker: "Front-end / Mobile Developer Çalışanı Olarak",
         description: [
             "Yazılım geliştirme konusunda son teknolojilere hakim,",
             "Öğrenmeye açık, Dünya’nın önde gelen uygulamalarının kullandığı teknolojilerde kendisini geliştirmek isteyen,",
@@ -144,6 +148,7 @@ export default [
     {
         title: "Marketing",
         subtitle: "Stajyer",
+        beWorker: "Marketing Çalışanı Olarak",
         description: [
             "Hızla büyüyen start-up’ımızda Pazarlama becerilerini geliştirmeye istekli,",
             "Öğrenmeye ve araştırmaya açık; girişken,",
