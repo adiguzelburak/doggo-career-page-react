@@ -1,19 +1,15 @@
 import React from "react";
 import "./css/design.css";
-import Navbar from "./Component/Navbar";
-import Body from "./Component/Body";
+import Home from "./Component/Home";
 import Pages from "./Component/Pages";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-const App = ({ match }) => {
+const App = () => {
   return (
     <Router>
       <div className="App">
         <Switch>
-          <Route path="/" exact component={Body} />
+          <Route path="/" exact component={Home} />
           <Route path="/careerDescription/:id" component={Pages} />
-
-          {/* <Body /> */}
-          {/* <Pages /> */}
         </Switch>
       </div>
     </Router>

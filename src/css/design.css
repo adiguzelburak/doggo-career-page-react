@@ -249,6 +249,11 @@
   color: #f8745d;
   font-size: 32px;
 }
+.lists{
+  list-style-image: url("../images/check.png");
+  margin-top: 10px;
+}
+
 @media only screen and (max-width: 1154px) {
   .title-join-us-intern {
     font-size: 18px;
